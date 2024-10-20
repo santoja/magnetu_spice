@@ -1,0 +1,17 @@
+{
+  "name": "santoja/magnetu_spice",
+  "description": "Shared custom libraries for the Magnetu/Wazaper project",
+  "type": "library",
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "doctrine/doctrine-fixtures-bundle": "^3.6",
+    "fakerphp/faker": "^1.23"
+  },
+  "autoload": {
+    "psr-4": {
+      "Magnetu\\Spice\\": "src/Spice"
+    }
+  }
+}
