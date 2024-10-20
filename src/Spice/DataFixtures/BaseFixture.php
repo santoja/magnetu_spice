@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Application\DataFixtures;
+namespace Magnetu\Spice\DataFixtures;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Faker\Factory;
