@@ -15,11 +15,11 @@ abstract class BaseFixture extends Fixture
         $this->faker = Factory::create();
     }
 
-    public function getRandomReference(string $reference, int $totalRecords): object
+    public function getRandomReference(ResolvableFixtureInterface $fixture): object
     {
         return $this->getReference(
-            $reference
-            .$this->faker->numberBetween(0, $totalRecords-1)
+            $fixture->getReferenceString()
+            .$this->faker->numberBetween(0, $fixture->getTotalRecords()-1)
         );
     }
 }
