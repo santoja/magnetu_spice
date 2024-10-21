@@ -4,7 +4,7 @@ namespace Magnetu\Spice\DataFixtures;
 
 interface ResolvableFixtureInterface
 {
-    public function getTotalRecords(): string;
+    public function getTotalRecords(): int;
 
     public function getReferenceString(): string;
 }
