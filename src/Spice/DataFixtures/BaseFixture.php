@@ -5,6 +5,7 @@ namespace Magnetu\Spice\DataFixtures;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Faker\Factory;
 use Faker\Generator;
+use Magnetu\Spice\Tests\Unit\DataFixtures\BaseFixtureTestClasses\NotRealEntity;
 use Psr\Container\ContainerInterface;
 
 abstract class BaseFixture extends Fixture
