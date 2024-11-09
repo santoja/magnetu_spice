@@ -24,4 +24,6 @@ abstract class BaseFixture extends Fixture
             . $this->faker->numberBetween(0, $fixture->getTotalRecords() - 1)
         );
     }
+
+    abstract function generateRecords(GenerateRecordsParamsInterface $params): void;
 }
