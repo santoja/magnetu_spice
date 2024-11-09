@@ -3,6 +3,7 @@
 namespace Magnetu\Spice\DataFixtures;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Persistence\ObjectManager;
 use Faker\Factory;
 use Faker\Generator;
 use Magnetu\Spice\Tests\Unit\DataFixtures\BaseFixtureTestClasses\NotRealEntity;
@@ -25,5 +26,5 @@ abstract class BaseFixture extends Fixture
         );
     }
 
-    abstract function generateRecords(GenerateRecordsParamsInterface $params): void;
+    abstract function generateRecords(ObjectManager $manager,GenerateRecordsParamsInterface $params): void;
 }
