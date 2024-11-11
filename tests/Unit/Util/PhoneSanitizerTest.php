@@ -2,6 +2,7 @@
 
 namespace Magnetu\Spice\Tests\Unit\Util;
 
+use Magnetu\Spice\Util\PhoneSanitizer;
 use PHPUnit\Framework\TestCase;
 
 class PhoneSanitizerTest extends TestCase
@@ -14,7 +15,8 @@ class PhoneSanitizerTest extends TestCase
      */
     public function testSanitizeFunctions(string $phone, string $expected)
     {
-
+        $phoneSanitizer = new PhoneSanitizer();
+        $this->assertSame($expected, $phoneSanitizer->sanitize($phone));
     }
 
     public static function getDataTestSanitizeFunctions(): array
@@ -22,7 +24,7 @@ class PhoneSanitizerTest extends TestCase
         return [
             [
                 '+39434-343-44@@@@',
-                '+39434343'
+                '+3943434344'
             ],
             [
                 '23093029302',
@@ -34,7 +36,7 @@ class PhoneSanitizerTest extends TestCase
             ],
             [
                 '+2999!29933395',
-                '299929933395'
+                '+299929933395'
             ],
             // TODO enable this case when we improve the number check
 //            [
