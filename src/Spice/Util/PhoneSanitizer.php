@@ -10,7 +10,12 @@ class PhoneSanitizer implements PhoneSanitizerInterface
     #[\Override]
     public function sanitize(string $phone): string
     {
-        // TODO change to accept only + on the start of the string
-        return preg_replace('/([^+0-9])/', '', $phone);
+        $count = substr_count($phone, '+');
+        $phone = preg_replace('/([^0-9])/', '', $phone);
+        if ($count > 0) {
+            $phone = '+'.$phone;
+        }
+
+        return $phone;
     }
 }

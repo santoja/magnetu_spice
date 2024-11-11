@@ -38,11 +38,10 @@ class PhoneSanitizerTest extends TestCase
                 '+2999!29933395',
                 '+299929933395'
             ],
-            // TODO enable this case when we improve the number check
-//            [
-//                '+44+22330',
-//                '+4422330'
-//            ],
+            [
+                '+44+22330',
+                '+4422330'
+            ],
         ];
     }
 }
