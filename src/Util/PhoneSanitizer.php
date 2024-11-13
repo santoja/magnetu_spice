@@ -2,12 +2,10 @@
 
 namespace Magnetu\Spice\Util;
 
-use Magnetu\Spice\Util\Interface\PhoneSanitizerInterface;
 
-class PhoneSanitizer implements PhoneSanitizerInterface
+class PhoneSanitizer
 {
 
-    #[\Override]
     public function sanitize(string $phone): string
     {
         $count = substr_count($phone, '+');
