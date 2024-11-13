@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Util\Interface;
+namespace Magnetu\Spice\Util\Interface;
 
 interface PhoneSanitizerInterface
 {

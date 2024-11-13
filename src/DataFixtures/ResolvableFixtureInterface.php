@@ -1,6 +1,6 @@
 <?php
 
-namespace src\DataFixtures;
+namespace Magnetu\Spice\DataFixtures;
 
 interface ResolvableFixtureInterface
 {

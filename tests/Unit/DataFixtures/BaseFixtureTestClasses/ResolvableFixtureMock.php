@@ -4,7 +4,7 @@ namespace Magnetu\Spice\Tests\Unit\DataFixtures\BaseFixtureTestClasses;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
-use src\DataFixtures\ResolvableFixtureInterface;
+use Magnetu\Spice\DataFixtures\ResolvableFixtureInterface;
 
 class ResolvableFixtureMock extends Fixture implements ResolvableFixtureInterface
 {

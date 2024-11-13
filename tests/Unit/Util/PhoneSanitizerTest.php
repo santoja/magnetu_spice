@@ -3,7 +3,7 @@
 namespace Magnetu\Spice\Tests\Unit\Util;
 
 use PHPUnit\Framework\TestCase;
-use src\Util\PhoneSanitizer;
+use Magnetu\Spice\Util\PhoneSanitizer;
 
 class PhoneSanitizerTest extends TestCase
 {
