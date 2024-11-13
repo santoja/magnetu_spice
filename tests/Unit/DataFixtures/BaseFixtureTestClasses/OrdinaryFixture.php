@@ -3,8 +3,8 @@
 namespace Magnetu\Spice\Tests\Unit\DataFixtures\BaseFixtureTestClasses;
 
 use Doctrine\Persistence\ObjectManager;
-use Magnetu\Spice\DataFixtures\BaseFixture;
-use Magnetu\Spice\DataFixtures\GenerateRecordsParamsInterface;
+use src\DataFixtures\BaseFixture;
+use src\DataFixtures\GenerateRecordsParamsInterface;
 
 class OrdinaryFixture extends BaseFixture
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Magnetu\Spice\Util;
+namespace src\Util;
 
-use Magnetu\Spice\Util\Interface\PhoneSanitizerInterface;
+use src\Util\Interface\PhoneSanitizerInterface;
 
 class PhoneSanitizer implements PhoneSanitizerInterface
 {

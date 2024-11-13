@@ -1,6 +1,6 @@
 <?php
 
-namespace Magnetu\Spice\Collections;
+namespace src\Collections;
 
 use IteratorAggregate;
 use Traversable;
