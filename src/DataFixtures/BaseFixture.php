@@ -20,7 +20,8 @@ abstract class BaseFixture extends Fixture
     {
         return $this->getReference(
             $fixture->getReferenceString()
-            . $this->faker->numberBetween(0, $fixture->getTotalRecords() - 1)
+            . $this->faker->numberBetween(0, $fixture->getTotalRecords() - 1),
+            $fixture->getEntityName()
         );
     }
 
