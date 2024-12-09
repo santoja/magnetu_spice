@@ -21,6 +21,6 @@ class OrdinaryFixture extends BaseFixture
 
     #[\Override] function generateRecords(ObjectManager $manager, GenerateRecordsParamsInterface $params): array
     {
-        // TODO: Implement generateRecords() method.
+        return [];
     }
 }
