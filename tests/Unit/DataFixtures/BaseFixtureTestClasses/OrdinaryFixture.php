@@ -19,7 +19,7 @@ class OrdinaryFixture extends BaseFixture
         return $this->getRandomReference($fixtureMock);
     }
 
-    #[\Override] function generateRecords(ObjectManager $manager, GenerateRecordsParamsInterface $params): void
+    #[\Override] function generateRecords(ObjectManager $manager, GenerateRecordsParamsInterface $params): array
     {
         // TODO: Implement generateRecords() method.
     }

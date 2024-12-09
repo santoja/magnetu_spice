@@ -26,5 +26,5 @@ abstract class BaseFixture extends Fixture
         );
     }
 
-    abstract function generateRecords(ObjectManager $manager,GenerateRecordsParamsInterface $params): void;
+    abstract function generateRecords(ObjectManager $manager,GenerateRecordsParamsInterface $params): array;
 }
