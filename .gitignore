@@ -1,7 +1,7 @@
 .DS_Store
 .idea
 /vendor/
-composer.lock
+
 ###> symfony/phpunit-bridge ###
 .phpunit.result.cache
 /phpunit.xml

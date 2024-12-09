@@ -6,8 +6,6 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker\Factory;
 use Faker\Generator;
-use Magnetu\Spice\Tests\Unit\DataFixtures\BaseFixtureTestClasses\NotRealEntity;
-use Psr\Container\ContainerInterface;
 
 abstract class BaseFixture extends Fixture
 {
@@ -22,7 +20,8 @@ abstract class BaseFixture extends Fixture
     {
         return $this->getReference(
             $fixture->getReferenceString()
-            . $this->faker->numberBetween(0, $fixture->getTotalRecords() - 1)
+            . $this->faker->numberBetween(0, $fixture->getTotalRecords() - 1),
+            $fixture->getEntityName()
         );
     }
 
